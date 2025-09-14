@@ -1,0 +1,128 @@
+/* Page container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f8; /* subtle light gray */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+}
+
+/* Card panel */
+.auth-card {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.auth-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.auth-card h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+/* Role Buttons */
+.role-button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.role-button:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+/* Specific Role Colors */
+.role-button.student { border-left: 4px solid #2563eb; }
+.role-button.faculty { border-left: 4px solid #10b981; }
+.role-button.admin { border-left: 4px solid #ef4444; }
+
+/* Input Fields */
+.auth-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+/* Submit Button */
+.auth-submit {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-submit:hover {
+  background-color: #1d4ed8;
+}
+
+/* Links */
+.toggle-link, .back-link {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #2563eb;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toggle-link:hover, .back-link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+.forgot-password-link {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ef4444;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+  color: #dc2626;
+}
